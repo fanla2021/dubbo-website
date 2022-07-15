@@ -509,4 +509,77 @@ Consumer存储内容，为Map格式。从Consumer端注册到注册中心的URL�
 &lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/section></description></item><item><title>Docs3-Building: 联系社区</title><link>https://dubbo.apache.org/zh/docs3-building/docs/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-building/docs/contact/</guid><description/></item></channel></rss>
+&lt;/section></description></item><item><title>Docs3-Building: 联系社区</title><link>https://dubbo.apache.org/zh/docs3-building/docs/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh/docs3-building/docs/contact/</guid><description>
+&lt;h2 id="为-dubbo-做贡献">为 Dubbo 做贡献&lt;/h2>
+&lt;p>Dubbo 是在非限制性的 Apache 2.0 许可下发布的，遵循标准的 Github 开发流程，使用Github追踪处理问题，并将 pull request 合并到 master 中。如果您想为 Dubbo 做贡献（即便是一些微小的），请不要犹豫，遵循下面的指导方针。&lt;/p>
+&lt;h3 id="联系我们">联系我们&lt;/h3>
+&lt;h4 id="邮件列表">邮件列表&lt;/h4>
+&lt;p>邮件列表是讨论几乎所有与 Dubbo 有关事情的推荐方式。有关如何订阅的详细文档，请参阅&lt;a href="https://github.com/apache/dubbo/wiki/Mailing-list-subscription-guide">指南&lt;/a>。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="mailto:dev-subscribe@dubbo.apache.org">dev@dubbo.apache.org&lt;/a>: 开发邮件列表，如果您在使用或开发Dubbo时遇到任何问题，您可以在此提出问题。&lt;/li>
+&lt;li>&lt;a href="mailto:commits-subscribe@dubbo.apache.org">commits@dubbo.apache.org&lt;/a>: 所有提交将被发送到这个邮件列表。如果您对Dubbo的发展感兴趣，您可以订阅它。&lt;/li>
+&lt;li>&lt;a href="mailto:notification-subscribe@dubbo.apache.org">notification@dubbo.apache.org&lt;/a>: 所有Github &lt;a href="https://github.com/apache/dubbo/issues">issue&lt;/a>和&lt;a href="https://github.com/apache/dubbo/pulls">pull request&lt;/a>的更新都会被发送到这个邮件列表。&lt;/li>
+&lt;/ul>
+&lt;h3 id="报告问题">报告问题&lt;/h3>
+&lt;p>在报告任何问题时请遵循&lt;a href="https://github.com/apache/dubbo/issues/new?template=dubbo-issue-report-template.md">模版&lt;/a>。&lt;/p>
+&lt;h3 id="代码约定">代码约定&lt;/h3>
+&lt;p>我们的代码风格几乎和标准 Java 约定一致（流行IDE的默认设置满足这一点），主要有以下附加限制：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>如果当前行中有超过 120 个字符，则起一个新的行。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>确保所有新的 .java 文件都有一个简单的 JavaDoc 类注释，其中至少有一个标识创建日期的标签，最好至少有一个关于该类的解释说明。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>将ASF许可注释添加到所有新的 .java 文件（从项目中的现有文件复制）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>请确保没有将 @author 标记添加到您所贡献的文件中，因为 Apache 不使用 @author 标记，其他方式（如cvs）将公平地记录所有您的贡献。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>为代码添加一些 JavaDoc，如果您更改命名空间，则需要一些 XSD DOC 元素。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>对于新的特征或重要的修复程序，应该添加单元测试。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>如果没有其他人使用您的分支，请将它与 master（或主项目中的其他目标分支）同步。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>当编写提交消息时，请遵循这些约定，如果您正在修复一个现有问题，请在提交消息的末尾添加 Fixes XXX（其中XXX是问题编号）。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="贡献流程">贡献流程&lt;/h3>
+&lt;p>这是一个贡献者工作流程的大致说明：&lt;/p>
+&lt;ul>
+&lt;li>克隆当前项目&lt;/li>
+&lt;li>从希望贡献的分支上创新新的分支，通常是 master 分支。&lt;/li>
+&lt;li>提交您的更改。&lt;/li>
+&lt;li>确保提交消息的格式正确。&lt;/li>
+&lt;li>将新分支推送到您克隆的代码库中。&lt;/li>
+&lt;li>执行检查表 &lt;a href="https://github.com/apache/dubbo/blob/master/PULL_REQUEST_TEMPLATE.md">pull request模版&lt;/a>。&lt;/li>
+&lt;li>在提交 pull request 请求前, 请将您克隆的代码和远程代码库同步，这样您的 pull request 会简单清晰。具体操作如下：&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>git remote add upstream git@github.com:apache/dubbo.git
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git fetch upstream
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git rebase upstream/master
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git checkout -b your_awesome_patch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>... add some work
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push origin your_awesome_patch
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>提交 pull request 请求到 apache/dubbo 并等待回复。&lt;/li>
+&lt;/ul>
+&lt;p>谢谢您的贡献！&lt;/p>
+&lt;h3 id="代码风格">代码风格&lt;/h3>
+&lt;p>我们提供了 IntelliJ idea 的模版文件&lt;a href="https://github.com/apache/dubbo/tree/master/codestyle/dubbo_codestyle_for_idea.xml">dubbo_codestyle_for_idea.xml&lt;/a>，您可以将它导入到IDE。&lt;/p>
+&lt;p>如果使用 Eclipse，可以通过参考该文件手动配置。&lt;/p>
+&lt;p>&lt;strong>注意事项&lt;/strong>&lt;/p>
+&lt;p>使用 dubbo_codestyle_for_idea.xml 为你的 IDEA 设置代码格式是贡献代码前至关重要的一个步骤，否则你将会无法通过 Travis CI 的代码风格校验，下面几个步骤给你演示了如何配置代码格式：&lt;/p>
+&lt;ol>
+&lt;li>进入菜单页 &lt;code>Editor &amp;gt; Code Style&lt;/code>&lt;/li>
+&lt;li>在 Code Style 页面的 scheme 菜单中点击 manage profiles 选项
+在下拉列表中选择 &lt;code>Import Scheme&lt;/code>, 接着选择 &lt;code>IntelliJ IDEA code style XML&lt;/code> 导入 xml 文件&lt;/li>
+&lt;li>输入你的格式名称，方便在不同工程之间进行识别，最后别忘了 ⏎ 来保存更改.&lt;/li>
+&lt;/ol>
+&lt;p>设置完成后，IDEA 会帮助你自动 reformat 代码&lt;/p></description></item></channel></rss>
